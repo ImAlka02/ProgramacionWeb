@@ -1,0 +1,36 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #176B87;
+}
+
+main {
+    background-color: #176B87;
+    height: 100vh;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    font-family: 'Outfit', sans-serif;
+    color: black;
+    text-decoration: none
+}
+
+.container {
+    border-radius: 16px;
+    background-color: white;
+    padding: 20px;
+    max-width: 375px;
+}
