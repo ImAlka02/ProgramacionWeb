@@ -5,21 +5,16 @@ namespace Actividad2.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(MonedaViewModel vm)
         {
-            return View();
-        }
-
-        public IActionResult Convertir(MonedaViewModel vm) 
-        {
-            if(vm.Moneda == "mx" || vm.Moneda == "MX")
+            if (vm.Moneda == "MX")
             {
                 vm.Conversion = vm.Valor * (decimal)18.00;
-            } else if(vm.Moneda == "usd" || vm.Moneda == "USD")
+            } else if (vm.Moneda == "USD")
             {
                 vm.Conversion = vm.Valor / (decimal)18.00;
             }
-            return View(vm);  
+            return View(vm);
         }
     }
 }

@@ -1,5 +1,39 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model Actividad2.Models.MonedaViewModel
 @{
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Index</title>
+
+</head>
+<body>
+    <main>
+        <form action="/home/Index" class="container">
+            <label>Ingresa la cantidad:</label></br>
+            <input type="number" name="Valor" value="@Model.Valor" /></br>
+            
+            <label class="cambio">$1.00 USD = $18.00 MX</label>
+            
+
+            <div class="typeContainer">
+                <label>Selecciona la moneda a la cual desea convertir: </label></br>
+                <input type="radio" id="mx" name="Moneda" value="MX" />
+                <label for="mx">MX</label></br>
+                <input type="radio" id="usd" name="Moneda" value="USD" />
+                <label for="usd">USD</label></br>
+                <input type="submit" value="Convertir"/>
+            </div>
+
+            <label>Total: $@Model.Conversion</label>
+        </form>
+    </main>
+
+</body>
+</html>
