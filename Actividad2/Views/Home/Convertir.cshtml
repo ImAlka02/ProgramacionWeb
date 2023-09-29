@@ -1,0 +1,17 @@
+﻿@model Actividad2.Models.MonedaViewModel
+@{
+}
+
+<form action="/home/convertir">
+    <label>Ingresa el el valor:</label>
+    <input type="number" name="cantidad" value="@Model.Valor"/>
+    
+    <input type="radio" id="mx" name="Moneda" />
+    <label for="mx">MX</label></br>
+    <input type="radio" id="usd" name="Moneda" />
+    <label for="usd">USD</label></br>
+    
+    <input type="submit" value="Convertir" />
+    
+    <label>La suma es: @Model.Conversion</label>
+</form>
