@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad1", "Actividad1\Ac
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unidad", "Unidad", "{F0A8BDC0-85F0-47D2-BC27-F0251F1B6BE8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actividad2", "Actividad2\Actividad2.csproj", "{524B740E-2F98-4C03-A275-E7B1B0EF62EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Actividad2", "Actividad2\Actividad2.csproj", "{524B740E-2F98-4C03-A275-E7B1B0EF62EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unidad 2", "Unidad 2", "{859936B7-C54F-43F9-B44C-0F6DF7750916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act1ZooPlanet", "Act1ZooPlanet\Act1ZooPlanet.csproj", "{3A6ED956-830D-44D3-A445-E3B13380AF52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +27,10 @@ Global
 		{524B740E-2F98-4C03-A275-E7B1B0EF62EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{524B740E-2F98-4C03-A275-E7B1B0EF62EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{524B740E-2F98-4C03-A275-E7B1B0EF62EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A6ED956-830D-44D3-A445-E3B13380AF52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6ED956-830D-44D3-A445-E3B13380AF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6ED956-830D-44D3-A445-E3B13380AF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6ED956-830D-44D3-A445-E3B13380AF52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{50525C5E-D806-4074-984E-686E3085258F} = {F0A8BDC0-85F0-47D2-BC27-F0251F1B6BE8}
 		{524B740E-2F98-4C03-A275-E7B1B0EF62EB} = {F0A8BDC0-85F0-47D2-BC27-F0251F1B6BE8}
+		{3A6ED956-830D-44D3-A445-E3B13380AF52} = {859936B7-C54F-43F9-B44C-0F6DF7750916}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {26D7EE0D-8C79-4911-974D-46B79FCF1773}
