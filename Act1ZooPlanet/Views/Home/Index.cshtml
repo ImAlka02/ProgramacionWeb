@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Act1ZooPlanet.Models.ViewModels.ClaseViewModel>
+@{
+    Layout = "Layout";
+}
+<div class="slides">
+    <img src="~/images/carousel1.jpg" />
+</div>
+
+<h1>Clasificación de los vertebrados</h1>
+
+<div class="clases">
+    @foreach (var e in Model)
+    {
+        <div>
+            <a href="~/Especies">
+                <img src="~/clases/@(e.Id).jpg" />
+                <h1>@e.Nombre</h1>
+                <p>@e.Descripcion</p>
+            </a>
+        </div>
+    }
+    
+</div>
