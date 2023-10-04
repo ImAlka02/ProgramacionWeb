@@ -23,7 +23,7 @@ namespace Act1ZooPlanet.Controllers
                         IdEspecie = x.Id,
                         NombreEspecie = x.Especie
                     })
-                });
+                }).FirstOrDefault();
             
             return View(datos);
         }
