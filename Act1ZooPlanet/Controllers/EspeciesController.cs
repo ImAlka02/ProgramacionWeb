@@ -2,16 +2,18 @@
 using Act1ZooPlanet.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 
 namespace Act1ZooPlanet.Controllers
 {
     public class EspeciesController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string Id)
         {
+            Id = Id.Replace("-", " ");
             AnimalesContext context = new();
 
-            var datos = context.Clase.Include(x => x.Especies)
+            var datos = context.Clase.Where(x=> x.Nombre == Id).Include(x => x.Especies)
                 .Select(x => new EspeciesViewModel()
                 {
                     IdClase = x.Id,

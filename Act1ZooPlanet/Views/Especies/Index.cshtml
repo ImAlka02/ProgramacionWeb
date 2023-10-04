@@ -7,14 +7,16 @@
     <h1>
         <img src="~/clases/@(c.IdClase).png" /> @c.NombreClase
     </h1>
-    @foreach (var e in c.Especie)
-    {
+    
         <div class="listaEspecies2">
+        @foreach (var e in c.Especie)
+        {
             <a href="~/Especies/Especie/@e.NombreEspecie.Replace(" ", "-")">
                 <img src="~/especies/@(e.IdEspecie).jpg" title="@e.NombreEspecie" />
             </a>
+        }
         </div>
-    }
+   
 }
 <script>
     var c = document.querySelector("main h1 img").cloneNode();

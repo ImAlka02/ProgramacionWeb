@@ -12,7 +12,7 @@
     @foreach (var e in Model)
     {
         <div>
-            <a href="~/Especies/Index">
+            <a href="~/Especies/Index/@(e.Nombre.Replace(" ","-"))">
                 <img src="~/clases/@(e.Id).jpg" />
                 <h1>@e.Nombre</h1>
                 <p>@e.Descripcion</p>
