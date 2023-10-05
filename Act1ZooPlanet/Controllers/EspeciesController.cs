@@ -10,7 +10,6 @@ namespace Act1ZooPlanet.Controllers
     {
         public IActionResult Index(string Id)
         {
-            Id = Id.Replace("-", " ");
             AnimalesContext context = new();
 
             var datos = context.Clase.Where(x=> x.Nombre == Id).Include(x => x.Especies)
@@ -38,9 +37,9 @@ namespace Act1ZooPlanet.Controllers
             {
                 Id = x.Id,
                 Nombre = x.Especie,
-                Clase = x.IdClaseNavigation.Nombre,
-                Habitad = x.Habitat,
-                Observaciones = x.Observaciones,
+                Clase = x.IdClaseNavigation.Nombre ?? "Sin nombre",
+                Habitad = x.Habitat ?? "Sin habitad",
+                Observaciones = x.Observaciones ?? "Sin descripcion",
                 Peso = x.Peso,
                 Size = x.Tamaño
             }).FirstOrDefault();

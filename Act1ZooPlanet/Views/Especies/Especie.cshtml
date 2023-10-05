@@ -7,7 +7,7 @@
     <img src="~/especies/@(Model.Id).jpg" />
     <div>
         <h1>@Model.Nombre</h1>
-        <p><label>Clase:</label><a href="~/Especies">@Model.Clase</a></p>
+        <p><label>Clase:</label><a href="~/Especies/Index/@Model.Clase">@Model.Clase</a></p>
         <p><label>Peso:</label>@(Model.Peso) kg</p>
         <p><label>Tamaño:</label>@(Model.Size) cm</p>
         <p><label>Habitat:</label>@Model.Habitad</p>
