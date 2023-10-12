@@ -1,0 +1,31 @@
+﻿@model RazaPerros.Models.ViewModels.IndexViewModel
+@{
+    Layout = "Layout";
+}
+<section class="nav">
+    <h3>ABC de Razas</h3>
+    <nav>
+        <a href="~/Home/Index">Todas</a>
+        @foreach (var l in Model.Letra)
+        {
+            <a href="~/Home/Index/@l">@l</a>
+        }
+        
+        <a href="pais.html">Listado por país</a>
+    </nav>
+</section>
+<section class="list">
+    <ul>
+        @foreach (var p in Model.Razas)
+        {
+            <li>
+                <a href="~/Raza/@p.NombreRaza">
+                    <img src="~/imgs_perros/@(p.Id)_0.jpg">
+                    @p.NombreRaza
+                </a>
+            </li>
+        }
+        
+    </ul>
+</section>
+
