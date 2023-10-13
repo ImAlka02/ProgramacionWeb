@@ -2,35 +2,33 @@
 {
     public class InfoRazaViewModel
     {
-        public int Id { get; set; }
-        public string NombreRaza { get; set; }
-        public string Descripcion { get; set; }
-        public string OtrosNombres { get; set; }
-        public string Pais { get; set; }
-        public double PesoMax{ get; set; }
-        public double PesoMin { get; set; }
-        public double AlturaMax { get; set; }
-        public double AlturaMin { get; set; }
-        public string EsperanzaVida { get; set; }
-        public int NivelEnergia { get; set; }
-        public int FacilidadEntrenamiento { get; set; }
-        public int EjercicioObligatiorio { get; set; }
-        public int AmigableExtraños { get; set; }
-        public int AmigablePerros { get; set; }
-        public int NecesidadCepillado { get; set; }
-        public string Patas { get; set; }
-        public string Cola { get; set; }
-        public string Hocico { get; set; }
-        public string Pelo { get; set; }
-        public string Color { get; set; }
+        public uint Id { get; set; }
+        public string NombreRaza { get; set; } = null!;
+        public string Descripcion { get; set; } = null!;
+        public string OtrosNombres { get; set; } = null!;
+        public string Pais { get; set; } = null!;
+        public string Peso{ get; set; } = null!;
+        public string Altura { get; set; } = null!;
+        public uint EsperanzaVida { get; set; }
+        public uint NivelEnergia { get; set; }
+        public uint FacilidadEntrenamiento { get; set; }
+        public uint EjercicioObligatiorio { get; set; }
+        public uint AmigableExtraños { get; set; }
+        public uint AmigablePerros { get; set; }
+        public uint NecesidadCepillado { get; set; }
+        public string Patas { get; set; } = null!;
+        public string Cola { get; set; } = null!;
+        public string Hocico { get; set; } = null!;
+        public string Pelo { get; set; } = null!;
+        public string Color { get; set; } = null!;
 
-        public IEnumerable<Perro> Perros { get; set; } 
+        public IEnumerable<PerroModel> Perros { get; set; } 
     }
 
-    public class Perro
+    public class PerroModel
     {
-        public int Id { get; set; }
-        public string Nombre { get; set; }
-        
+        public uint Id { get; set; }
+        public string Nombre { get; set; } = null!;
+
     }
 }

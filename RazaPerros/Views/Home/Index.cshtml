@@ -11,7 +11,7 @@
             <a href="~/Home/Index/@l">@l</a>
         }
         
-        <a href="pais.html">Listado por país</a>
+        <a href="~/ListadoPaises">Listado por país</a>
     </nav>
 </section>
 <section class="list">
@@ -19,7 +19,7 @@
         @foreach (var p in Model.Razas)
         {
             <li>
-                <a href="~/Raza/@p.NombreRaza">
+                <a href="~/Raza/@p.NombreRaza.Replace(" ", "-")">
                     <img src="~/imgs_perros/@(p.Id)_0.jpg">
                     @p.NombreRaza
                 </a>
